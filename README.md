@@ -18,6 +18,11 @@ The steps needed for a user to purchase the iPhone 13 are the following:
 8. Confirm the purchase.
 
 ### Eniac's Conversion Funnel:
-![image](https://github.com/PriyankaSPawar/Data-Science-A-B-Tesing/assets/168557945/174e3678-2865-49c7-975b-2742c15207e3)
-
 In one week Eniac attracted very substantial web traffic (50.000 visits). However, only a very small portion of these visitors went down the funnel, with 30 iPhone sales confirmed.
+
+![Eniac's Conversion Funnel](https://github.com/PriyankaSPawar/Data-Science-A-B-Tesing/assets/168557945/174e3678-2865-49c7-975b-2742c15207e3)
+
+### Conversion Rates
+Here it becomes clearer where in the funnel is Eniac losing the most potential buyers: 
+1. The “SHOP NOW” button, at the top of the funnel, only has a 2% conversion rate.
+2. The rest of the steps perform at more than 30%.
