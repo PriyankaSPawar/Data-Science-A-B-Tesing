@@ -6,6 +6,15 @@ Welcome to the designing Eniac's A/B Test Project! This project focuses on evalu
 ### Project Overview
 A common challenge of internet companies is to increase conversions through a better User Interface (an appealing design) and User Experience (intuitive and usable interactions). This is initially a task for the Design team, but once visitors start to flow, purchases begin to happen and designers are out of improvement ideas, it is time for the Data Analytics team to step in and support improvements through rigorous experimentation.
 
+### Skills & Tools
+1. Data Collection & Cleaning
+2. Hypothesis Testing
+3. A/B Testing
+4. Chi-Square Testing
+
+### Challenge:
+To test all four versions of the button(SHOP NOW)
+
 ### User's Path
 The steps needed for a user to purchase the iPhone 13 are the following:
 1. Visit Eniac’s site.
