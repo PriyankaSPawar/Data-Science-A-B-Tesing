@@ -84,6 +84,7 @@ It seems like the red variations are the worst performers, while the white butto
 **Alternative Hypothesis**: The observed differences are not due to chance: there is at least one version that got so many more/much less clicks than the others that this can hardly be explained just by chance (i.e. they have a better/worse CTR, a better/worse performance).
 
 Since we were only interested in people clicking on that single element, here the counts on “Click” are the clicks on that element and “No-click” is simply calculated as visits - clicks
+
 ![image](https://github.com/PriyankaSPawar/Data-Science-A-B-Tesing/assets/168557945/f4ca1c66-740c-4258-9527-a05b3e6181a8)
 
 This is how data has been shaped so that we have performed a chi-square test using the **chi2_contingency** function from **scipy**, and finally saw whether the results are significant. 
