@@ -26,3 +26,10 @@ In one week Eniac attracted very substantial web traffic (50.000 visits). Howeve
 Here it becomes clearer where in the funnel is Eniac losing the most potential buyers: 
 1. The “SHOP NOW” button, at the top of the funnel, only has a 2% conversion rate.
 2. The rest of the steps perform at more than 30%.
+
+### CTR:
+With the goal of increasing the conversion rate of the “SHOP NOW” button (when a conversion is a “click”, abbreviated CTR),Marketing has asked the Design team for a redesign of the button, which results in new 3 different versions as follows:
+- Version A: the original site.
+- Version B: the SHOP NOW button is now red.
+- Version C: the SHOP NOW button has a new text, “SEE DEALS”
+- Version D: both the B and the C changes to the button have been applied.
