@@ -47,4 +47,25 @@ When designing the experiment, several questions can arise:
 7. How can we ever be sure that the version with the best performance does not have more clicks due to just chance?
 8. How long can we expect the experiment to last?
 
+### Metrics to perfor the Test:
 
+- The decision was reached to test all four versions of the button:
+  - White “SHOP NOW”
+  - Red “SHOP NOW”
+  - White “SEE DEALS”
+  - Red “SEE DEALS”
+    
+- The metrics that were deemed relevant enough to be tracked were the following:
+  1. **Click-through rate (CTR)** for the homepage. Amount of clicks on the button divided by the total visits to the page. Selected as a measure of the initial ability of a website element to lead users to interact with it.
+  2. **Drop-off rate for the linked page** This metric represents the percentage of visitors who initiate a conversion process (such as a purchase or sign-up) but do not complete it. It serves as an indicator of how engaged users remain at any point in the conversion process.
+  3. **Homepage-return rate for the category pages**
+      
+- While all the metrics will be relevant for the decision-making process, it was decided that for a version to be considered superior, there must be statistical significance in the click-through rate.
+
+### Experiment & Analysis:
+
+The hypotheses to be tested in the experiment are the following:
+- Null Hypothesis: all versions have the same CTR.
+- Alternative Hypothesis: there is a difference in the CTR for the different versions.
+  
+A typical statistical significance of 95% was chosen. Minimum detectable effect was set to 20%, it having been determined that even a small increase in the conversion pipeline would cover the costs of a small change to the website.
