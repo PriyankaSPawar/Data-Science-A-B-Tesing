@@ -47,7 +47,7 @@ When designing the experiment, several questions can arise:
 7. How can we ever be sure that the version with the best performance does not have more clicks due to just chance?
 8. How long can we expect the experiment to last?
 
-### Metrics to perfor the Test:
+### Metrics to perform the Test:
 
 - The decision was reached to test all four versions of the button:
   - White “SHOP NOW”
@@ -59,13 +59,44 @@ When designing the experiment, several questions can arise:
   1. **Click-through rate (CTR)** for the homepage. Amount of clicks on the button divided by the total visits to the page. Selected as a measure of the initial ability of a website element to lead users to interact with it.
   2. **Drop-off rate for the linked page** This metric represents the percentage of visitors who initiate a conversion process (such as a purchase or sign-up) but do not complete it. It serves as an indicator of how engaged users remain at any point in the conversion process.
   3. **Homepage-return rate for the category pages**
-      
+  4. The hypotheses to be tested in the experiment are the following:
+  - Null Hypothesis: all versions have the same CTR.
+  - Alternative Hypothesis: there is a difference in the CTR for the different versions.
+       
 - While all the metrics will be relevant for the decision-making process, it was decided that for a version to be considered superior, there must be statistical significance in the click-through rate.
+- A typical statistical significance of 95% was chosen. Minimum detectable effect was set to 20%, it having been determined that even a small increase in the conversion pipeline would cover the costs of a small change to the website.
 
 ### Experiment & Analysis:
 
-The hypotheses to be tested in the experiment are the following:
-- Null Hypothesis: all versions have the same CTR.
-- Alternative Hypothesis: there is a difference in the CTR for the different versions.
-  
-A typical statistical significance of 95% was chosen. Minimum detectable effect was set to 20%, it having been determined that even a small increase in the conversion pipeline would cover the costs of a small change to the website.
+![image](https://github.com/PriyankaSPawar/Data-Science-A-B-Tesing/assets/168557945/c5f61b5b-4910-4a29-a938-000c7f2e76c0)
+It seems like the red variations are the worst performers, while the white buttons perform much better. But, are those differences due to chance? This is what we are going to test:
+
+**Null Hypothesis**: The 4 versions of the button are equally likely to receive clicks, and the observed differences are due to chance.
+**Alternative Hypothesis**: The observed differences are not due to chance: there is at least one version that got so many more/much less clicks than the others that this can hardly be explained just by chance (i.e. they have a better/worse CTR, a better/worse performance).
+
+Since we were only interested in people clicking on that single element, here the counts on “Click” are the clicks on that element and “No-click” is simply calculated as visits - clicks
+![image](https://github.com/PriyankaSPawar/Data-Science-A-B-Tesing/assets/168557945/f4ca1c66-740c-4258-9527-a05b3e6181a8)
+
+This is how data has been shaped so that we have performed a chi-square test using the **chi2_contingency** function from **scipy**, and finally saw whether the results are significant. 
+
+### Final Results :
+
+![image](https://github.com/PriyankaSPawar/Data-Science-A-B-Tesing/assets/168557945/4b57df51-d509-4d37-abb0-adde2493f863)
+
+Analysing the heatmap above , The version with the highest click-through rate, **Version_C**, exhibits a statistically significant difference when compared Versions B and D, but not to Version_A, which possesses the second-highest click-through rate. As a result, declaring a clear winner based on post hoc tests becomes challenging, therefore we can only say that both Version_C and Version_A are the winners.
+
+However, if a definitive winner is required, additional steps need to be implemented. This is where we transition from the realm of statistics to the business world. The following actions can help in determining the version to be featured on the website in the future:
+- Consider other metrics alongside click-through rate.
+- Incorporate qualitative research findings.
+- Seek input from subject-matter experts.
+- Redesign the experiment and conduct it once more.
+
+### Conclusion :
+
+By performing this project, I have learnt how to perform A/B Testing with several testing methods and how to interpret the results efficiently. To perform the testing we should take care of cleaned and formatted data. Even when the significant statistics are not clear, taking into consideration that other metrics are implicated as well. These additional insights can provide a more comprehensive understanding of user behavior and guide better decision-making for future optimizations.
+
+
+
+
+
+
