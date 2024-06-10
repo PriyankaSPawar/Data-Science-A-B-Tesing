@@ -33,3 +33,7 @@ With the goal of increasing the conversion rate of the “SHOP NOW” button (wh
 - Version B: the SHOP NOW button is now red.
 - Version C: the SHOP NOW button has a new text, “SEE DEALS”
 - Version D: both the B and the C changes to the button have been applied.
+
+![image](https://github.com/PriyankaSPawar/Data-Science-A-B-Tesing/assets/168557945/8b01e09a-a6a8-410b-a20d-4e621b97865d)
+
+
