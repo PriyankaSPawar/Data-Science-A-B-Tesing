@@ -83,6 +83,7 @@ When designing the experiment, several questions can arise:
 It seems like the red variations are the worst performers, while the white buttons perform much better. But, are those differences due to chance? This is what we are going to test:
 
 **Null Hypothesis**: The 4 versions of the button are equally likely to receive clicks, and the observed differences are due to chance.
+
 **Alternative Hypothesis**: The observed differences are not due to chance: there is at least one version that got so many more/much less clicks than the others that this can hardly be explained just by chance (i.e. they have a better/worse CTR, a better/worse performance).
 
 Since we were only interested in people clicking on that single element, here the counts on “Click” are the clicks on that element and “No-click” is simply calculated as visits - clicks
