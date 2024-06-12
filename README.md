@@ -78,6 +78,8 @@ When designing the experiment, several questions can arise:
 ### Experiment & Analysis:
 
 ![image](https://github.com/PriyankaSPawar/Data-Science-A-B-Tesing/assets/168557945/c5f61b5b-4910-4a29-a938-000c7f2e76c0)
+
+
 It seems like the red variations are the worst performers, while the white buttons perform much better. But, are those differences due to chance? This is what we are going to test:
 
 **Null Hypothesis**: The 4 versions of the button are equally likely to receive clicks, and the observed differences are due to chance.
